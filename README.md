@@ -2,6 +2,9 @@
 
 ![alt text](https://media2.giphy.com/media/qxatFjrUlx3H2/giphy.gif?cid=ecf05e47ydx8ad064oi4695t0pkzjycuyk16qbrfooee90xz&rid=giphy.gif&ct=g)
 
+# About
+This project is going to be a live production site for a fishing charter company. This is the prototype. Please make a branch with a specific feature from the kanban board under the project section. Only work on specific features from the kanban and commit your changes to it via pull request. Looking forward to collaborating. Any questions feel free to reach me on discord.
+
 # How to start 
 
 install dependencies 
