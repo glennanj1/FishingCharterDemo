@@ -2,6 +2,20 @@
 
 ![alt text](https://media2.giphy.com/media/qxatFjrUlx3H2/giphy.gif?cid=ecf05e47ydx8ad064oi4695t0pkzjycuyk16qbrfooee90xz&rid=giphy.gif&ct=g)
 
+# How to start 
+
+install dependencies 
+
+- ```npm install```
+
+start the dev server 
+
+- ```npm run dev```
+
+go to local host
+
+- ```localhost:3000```
+
 Technologies Used: React, Next, MongoDB, Express, GAv4, AWS
 
 # Rules of The Road
