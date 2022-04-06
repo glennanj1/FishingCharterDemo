@@ -2,17 +2,24 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import frank1 from '../public/frank1.png'
 
-export default function Home() {
+
+export default function Home(props) {
+
+ 
+  
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>30 Line Fishing</title>
         <meta name="description" content="Worlds Best Fisherman" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        
+        <Image alt="Frank" src={frank1} width={300} height={300} />
         <h1 className={styles.title}>
           30 Line Fishing
         </h1>
