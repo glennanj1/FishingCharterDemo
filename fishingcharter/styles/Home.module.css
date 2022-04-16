@@ -1,6 +1,25 @@
 .container {
   padding: 0 2rem;
 }
+.maps {
+  width: 80vw;
+  border-radius: 10px;
+}
+.frankWrapper {
+  width: 30vw;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.video {
+  width: 80vw;
+  border-radius: 10px;
+}
 
 .main {
   min-height: 100vh;
@@ -51,7 +70,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 2rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }

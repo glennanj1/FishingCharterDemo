@@ -3,12 +3,23 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import frank1 from '../public/frank1.png'
-
+import Carousel from 'react-material-ui-carousel'
+// import Item from '../components/items'
 
 export default function Home(props) {
-
- 
   
+  
+  let items = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!"
+    },
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+  ]
+ 
   return (
     <div className={styles.container}>
       <Head>
@@ -18,16 +29,17 @@ export default function Home(props) {
       </Head>
 
       <main className={styles.main}>
-        
-        <Image alt="Frank" src={frank1} width={300} height={300} />
         <h1 className={styles.title}>
           30 Line Fishing
         </h1>
+        <div className={styles.frankWrapper}>
+          <Image alt="Frank" src={frank1} className={styles.frank} />
+        </div>
 
         <p className={styles.description}>
           Once in a lifetime fishing experience{' '}
         </p>
-
+      <section className={styles.section}>
         <div className={styles.grid}>
           <Link href="/about">
           <a className={styles.card}>
@@ -65,7 +77,27 @@ export default function Home(props) {
           </a>
           </Link>
         </div>
+      </section>
       </main>
+      <section className={styles.section}>
+        <h1 className={styles.title}>
+            Tuna
+        </h1>
+        <video controls autoPlay loop muted className={styles.video}>
+          <source src="/fishing2.mp4" />
+        </video>
+      </section>
+      <section className={styles.section}>
+       <h1 className={styles.title}>
+            Locations
+        </h1>
+        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section className={styles.section}>
+        <h1 className={styles.title}>
+              Catches
+        </h1>
+      </section>
 
       <footer className={styles.footer}>
         <a
@@ -82,3 +114,5 @@ export default function Home(props) {
     </div>
   )
 }
+
+
