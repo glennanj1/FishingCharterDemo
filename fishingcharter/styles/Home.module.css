@@ -5,9 +5,11 @@
   width: 80vw;
   border-radius: 10px;
 }
+
 .frankWrapper {
   width: 30vw;
 }
+
 .section {
   display: flex;
   flex-direction: column;

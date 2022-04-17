@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styles from '../styles/theme/About.module.css'
 
-function about() {
+function About() {
 
   let fetchWeather = () => {
     console.log('fetching weather')
@@ -27,4 +27,4 @@ function about() {
   )
 }
 
-export default about
+export default About

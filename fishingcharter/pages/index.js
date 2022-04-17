@@ -63,7 +63,6 @@ export default function Home(props) {
             <h2>Contact Us &rarr;</h2>
             <p>Give Us a Call at during buisness hours. We are open from x - x </p>
           </a>
-
           </Link>
           <Link href="/login">
           <a
@@ -80,10 +79,7 @@ export default function Home(props) {
       </section>
       </main>
       <section className={styles.section}>
-        <h1 className={styles.title}>
-            Tuna
-        </h1>
-        <video controls autoPlay loop muted className={styles.video}>
+        <video autoPlay loop muted className={styles.video}>
           <source src="/fishing2.mp4" />
         </video>
       </section>

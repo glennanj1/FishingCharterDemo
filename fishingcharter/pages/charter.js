@@ -1,12 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-function charter() {
+function Charter() {
   return (
     <div>charter</div>
   )
 }
 
-export default charter
+export default Charter
 
 
 
