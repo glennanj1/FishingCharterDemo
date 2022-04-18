@@ -1,25 +1,15 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import frank1 from '../public/frank1.png'
-import Carousel from 'react-material-ui-carousel'
-// import Item from '../components/items'
 
 export default function Home(props) {
+  useEffect(() => {
+    fetch('/api/hello').then(r => r.json()).then(d => console.log(d)).catch(err => console.log(err))
+  })
   
-  
-  let items = [
-    {
-        name: "Random Name #1",
-        description: "Probably the most random thing you have ever seen!"
-    },
-    {
-        name: "Random Name #2",
-        description: "Hello World!"
-    }
-  ]
- 
   return (
     <div className={styles.container}>
       <Head>
@@ -101,10 +91,10 @@ export default function Home(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Footer Information Here with logo?{' '}
-          {/* <span className={styles.logo}>
+          30 Line Fishing LLC{' '}
+          <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span> */}
+          </span>
         </a>
       </footer>
     </div>
