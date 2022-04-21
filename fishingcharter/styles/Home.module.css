@@ -136,4 +136,9 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .frankWrapper {
+    width: 80vw;
+    border-bottom: solid white 10px;
+  }
 }
