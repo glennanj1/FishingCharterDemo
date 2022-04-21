@@ -1,0 +1,25 @@
+.about {
+    font-size: 2em;
+}
+.container {
+    margin-top: -47px;
+    background: #282d39;
+    border-radius: 50px 50px 0 0;
+    border: solid 1px;
+    padding: 5px 50px;
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+}
+
+.frankContainer {
+    width: 50vw;
+    height: 50vw;
+}
+
+.topContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}

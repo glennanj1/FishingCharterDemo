@@ -1,9 +1,14 @@
 import React from 'react'
-import styles from '../styles/theme/About.module.css'
+import Image from 'next/image'
+import styles from '../styles/About.module.css'
+import frank from '../public/frankStriperCatch.png'
 
 function About() {  
   return (
     <>
+     <section className={styles.topContainer}>
+          <Image alt="Frank" src={frank} width={300} height={300}/>
+     </section>
       <section className={styles.container}>
           <h1 className={styles.about}>About Us</h1>
           <p>
