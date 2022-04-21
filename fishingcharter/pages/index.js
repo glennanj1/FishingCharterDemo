@@ -8,7 +8,7 @@ import OutlinedCard from '../components/card'
 
 export default function Home(props) {
   useEffect(() => {
-    fetch('/api/hello').then(r => r.json()).then(d => console.log(d)).catch(err => console.log(err))
+    console.log('welcome to 30 line sport fishing thanks for inspecting the page! We use next JS and are looking for developers to contribute!')
   })
   
   return (
