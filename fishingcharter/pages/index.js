@@ -83,7 +83,7 @@ export default function Home(props) {
       <section className={styles.section}>
         <h1 className={styles.title}>
         </h1>
-              <OutlinedCard />
+        <OutlinedCard />
       </section>
 
       <footer className={styles.footer}>
