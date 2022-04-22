@@ -9,42 +9,34 @@ This project is going to be a live production site for a fishing charter company
 
 install dependencies 
 
-- ```npm install```
+- ```yarn install```
 
 start the dev server 
 
-- ```npm run dev```
+- ```yarn dev```
 
 go to local host
 
-- ```localhost:3000```
+- ```http://localhost:3000 || http://0.0.0.0:3000```
 
 Technologies Used: React, Next, MongoDB, Express, GAv4, AWS
 
-# Rules of The Road
+# Github Rules
 
-Below You will Find the Rules of the Road
+- Fork the project
+- Pull changes from the projects main branch 
+- Pick something on the Kanban board under projects in the repo to work on
+- Test your changes makes sure they are working
+- Start to make a pull request (merge request)
+1. Push your changes locally to your repo (the fork)
+2. ```git request-pull insert repo here with main branch``` 
+3. Look up how to make a pull request if needed
+4. Push your changes to the PR
+5. I will review changes and integrate them 
 
-## Making a Branch
 
-
-Clone this repo into a folder that you have isolated and preped for the project.
-
-- Create Your Branch ```git checkout -b yourbranchname```
-
-- Make sure that you pull before pushing ```git pull origin main or git pull``` 
-
-- Add your files ```git add ./filepathhere``` 
-
-- Commit Meaningful Messages ```git commit -m "your commit message here please be specific about what you did"``` 
-
-- Push your changes to the repo ```git push``` 
-
-## Merging after Pushing
-
-- Your going to want to switch branches ```git checkout main``` this will take you to the main branch where the repo has been cloned 
-- After switching to main ****** Very Important ****** ```git pull``` Always pull before attempting to add commit and push.` 
-
-- Then merge your changes ```git merge yourbranchname```.
-
-- If you get an error reach out to me and I will help you trouble shoot it!
+# Goals
+- Add Calendar where you can book appointments (mongodb already setup)
+- Make ERD for appointments times and users
+- Integrate Auth0 (currently in progress)
+- Finish Contact Us Page
