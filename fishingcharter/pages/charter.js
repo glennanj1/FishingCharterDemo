@@ -1,8 +1,11 @@
 import React, {useEffect} from 'react'
+import BasicDatePicker from '../components/calender'
 
 function Charter() {
   return (
-    <div>charter</div>
+    <div>
+      <BasicDatePicker />
+    </div>
   )
 }
 
