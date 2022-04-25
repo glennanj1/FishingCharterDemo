@@ -26,7 +26,7 @@ Technologies Used: React, Next, MongoDB, Express, GAv4, AWS
 - Fork the project
 - Pull changes from the projects main branch 
 - Pick something on the Kanban board under projects in the repo to work on
-- Test your changes makes sure they are working
+- Test your changes make sure they are working
 - Start to make a pull request (merge request)
 1. Push your changes locally to your repo (the fork)
 2. ```git request-pull insert repo here with main branch``` 
