@@ -26,7 +26,8 @@
     "prop-types": "^15.8.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-material-ui-carousel": "^3.3.3"
+    "react-material-ui-carousel": "^3.3.3",
+    "react-slideshow-image": "^3.7.3"
   },
   "devDependencies": {
     "eslint": "8.12.0",
