@@ -1,6 +1,15 @@
 .container {
   padding: 0 2rem;
 }
+
+.slideshow {
+  position: relative;
+}
+.slideshowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .maps {
   width: 80vw;
   border-radius: 10px;
