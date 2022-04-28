@@ -3,9 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import frank1 from '../public/frank1.png'
-import OutlinedCard from '../components/card'
+// import frank1 from '../public/frank1.png'
+// import OutlinedCard from '../components/card'
 import Slideshow from '../components/slideshow.js'
+import ScrollableTabsButtonVisible from '../components/badges'
 
 export default function Home(props) {
   useEffect(() => {
@@ -24,17 +25,18 @@ export default function Home(props) {
         <h1 className={styles.title}>
           30 Line Sport Fishing
         </h1>
-        <div className={styles.frankWrapper}>
+        {/* <div className={styles.frankWrapper}>
           <Image alt="Frank" src={frank1} className={styles.frank} />
-        </div>
-
+        </div> */}
+        <ScrollableTabsButtonVisible />
         <p className={styles.description}>
-          Once in a lifetime fishing experience{' '}
+          Once in a lifetime fishing experience with Captain Frank Cicalese and crew{' '}
         </p>
       <section className={styles.section}>
         <div className={styles.grid}>
+
           <Link href="/about">
-          <a className={styles.card}>
+          <a className={styles.card} id={styles.card}>
             <h2>About &rarr;</h2>
             <p>Find in-depth information about what we do</p>
           </a>
@@ -70,20 +72,17 @@ export default function Home(props) {
         </div>
       </section>
       </main>
+      
       <section className={styles.section}>
         <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
           <source src="/fishing2.mp4" type='video/mp4' />
         </video>
       </section>
+
       <section className={styles.section}>
         <h1 className={styles.title}>
         </h1>
-        <OutlinedCard />
-      </section>
-      <section className={styles.section}>
-        <h1 className={styles.title}>
-        </h1>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <section className={styles.slideshow}>
         <Slideshow />
