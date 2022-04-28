@@ -1,9 +1,11 @@
+
 .container {
   padding: 0 2rem;
 }
 
 .slideshow {
   position: relative;
+  margin: 10vw;
 }
 .slideshowContainer {
   display: flex;
@@ -12,6 +14,7 @@
 }
 .maps {
   width: 80vw;
+  height: 100vh;
   border-radius: 10px;
 }
 
@@ -115,6 +118,8 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover,
@@ -133,6 +138,28 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.card::after {
+  content: '';
+  height: 370%;
+  width: 240%;
+  left: -50%;
+  bottom: -50%;
+  background: white;
+  border-radius: 40%;
+  animation: spin 3s ease-in-out forwards;
+  position: absolute;
+}
+
+/* Animation */
+@keyframes spin {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-100%) rotate(500deg);
+  }
 }
 
 .logo {
