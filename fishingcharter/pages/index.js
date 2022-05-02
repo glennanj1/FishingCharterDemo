@@ -17,24 +17,23 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>30 Line Fishing</title>
-        <meta name="description" content="Worlds Best Fisherman" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content="/metaFrank.png" />
+        <meta property="og:description" content="Once in a lifetime catch" />
+        <meta property="og:title" content="30 Line Fishing" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           30 Line Sport Fishing
         </h1>
+        <div className={styles.scrollBar}>
+          <ScrollableTabsButtonVisible />
+        </div>
         {/* <div className={styles.frankWrapper}>
           <Image alt="Frank" src={frank1} className={styles.frank} />
         </div> */}
-        <ScrollableTabsButtonVisible />
-        <p className={styles.description}>
-          Once in a lifetime fishing experience with Captain Frank Cicalese and crew{' '}
-        </p>
-      <section className={styles.section}>
         <div className={styles.grid}>
-
           <Link href="/about">
           <a className={styles.card} id={styles.card}>
             <h2>About &rarr;</h2>
@@ -69,8 +68,10 @@ export default function Home(props) {
             </p>
           </a>
           </Link>
-        </div>
-      </section>
+          </div>
+        <p className={styles.description}>
+          Once in a lifetime fishing experience with Captain Frank Cicalese and crew{' '}
+        </p>
       </main>
       
       <section className={styles.section}>
@@ -79,13 +80,14 @@ export default function Home(props) {
         </video>
       </section>
 
+      <section className={styles.slideshow}>
+        <Slideshow />
+      </section>
+
       <section className={styles.section}>
         <h1 className={styles.title}>
         </h1>
         <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <section className={styles.slideshow}>
-        <Slideshow />
       </section>
 
       <footer className={styles.footer}>
