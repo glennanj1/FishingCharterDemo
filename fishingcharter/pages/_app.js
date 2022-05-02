@@ -22,11 +22,11 @@ const MyApp = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <IconButton aria-label="delete" onClick={handleClick}>
-          <Brightness4Icon/>
-        </IconButton>
-        <Component {...pageProps} />
+          <CssBaseline />
+            <IconButton aria-label="darkmode" onClick={handleClick} style={{"position": "fixed"}}>
+              <Brightness4Icon/>
+            </IconButton>
+          <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
   );
