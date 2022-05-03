@@ -27,7 +27,8 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>30 Line Fishing</title>
-        <meta property="og:image" content="/metaFrank.png" />
+        <meta property="og:image" content="https://i.giphy.com/media/TUslLn9iOua7MFxSJ5/giphy.webp" />
+        <meta name="description" content="Once in a liftime catch"/>
         <meta property="og:description" content="Once in a lifetime catch" />
         <meta property="og:title" content="30 Line Fishing" />
         <meta property="og:type" content="website" />
