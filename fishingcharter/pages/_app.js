@@ -8,6 +8,7 @@ import darkTheme from '../styles/theme/darkTheme';
 import IconButton from '@mui/material/IconButton';
 import '../styles/globals.css';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Page from '../components/back.js';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -23,9 +24,10 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
           <CssBaseline />
-            <IconButton aria-label="darkmode" onClick={handleClick} style={{"position": "fixed"}}>
+            <IconButton aria-label="darkmode" onClick={handleClick} style={{"position": "fixed", "right": "10px"}}>
               <Brightness4Icon/>
-            </IconButton>
+              </IconButton>
+            <Page />
           <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
