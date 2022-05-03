@@ -8,7 +8,7 @@
 }
 
 .slideshow {
-  background: url('/bgVideo.png');
+  background: url('https://fishingCharterFinal.b-cdn.net/bgVideo.png');
   position: relative;
   height: 100vh;
 }
@@ -65,7 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('/bgSlidshow.png');
+  background: url('https://fishingCharterFinal.b-cdn.net/bgSlidshow.png');
   background-size: cover;
 }
 

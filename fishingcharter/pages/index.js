@@ -86,7 +86,7 @@ export default function Home() {
         <div>
           {mobile ? (
             <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
-              <source src="/fishing1.MOV" type='video/mp4' />
+              <source src="https://fishingCharterFinal.b-cdn.net/fishing1.MOV" type='video/mp4' />
             </video> 
             ) : (
               null
@@ -95,7 +95,7 @@ export default function Home() {
         <div>
           {mobile != true ? (
             <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
-              <source src="/fishing2.mp4" type='video/mp4' />
+              <source src="https://fishingCharterFinal.b-cdn.net/fishing.mp4" type='video/mp4' />
             </video> 
           ): null}
         </div>
