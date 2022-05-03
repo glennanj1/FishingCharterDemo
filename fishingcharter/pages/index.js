@@ -32,11 +32,11 @@ export default function Home() {
         <meta property="og:description" content="Once in a lifetime catch" />
         <meta property="og:title" content="30 Line Fishing" />
         <meta property="og:type" content="website" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@glennan_dev" />
-        <meta property="twitter:title" content="30 Line Sports Fishing LLC" />
-        <meta property="twitter:description" content="Once in a lifetime fishing charter" />
-        <meta property="twitter:image" content="https://fishingCharterFinal.b-cdn.net/IMG_4428" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@glennan_dev" />
+        <meta name="twitter:title" content="30 Line Sports Fishing LLC" />
+        <meta name="twitter:description" content="Once in a lifetime fishing charter" />
+        <meta name="twitter:image" content="https://fishingCharterFinal.b-cdn.net/IMG_4428" />
       </Head>
 
       <main className={styles.main}>
