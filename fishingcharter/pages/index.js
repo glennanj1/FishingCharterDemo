@@ -34,9 +34,7 @@ export default function Home(props) {
         <div className={styles.scrollBar}>
           <ScrollableTabsButtonVisible />
         </div>
-        {/* <div className={styles.frankWrapper}>
-          <Image alt="Frank" src={frank1} className={styles.frank} />
-        </div> */}
+    
         <div className={styles.grid}>
           <Link href="/about">
           <a className={styles.card} id={styles.card}>
@@ -79,20 +77,20 @@ export default function Home(props) {
       </main>
       
       <section className={`${styles.section} ${styles.backgroundVideo}`}>
-        {width <= 430 ? (
-          <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
-            <source src="/fishing1.MOV" type='video/mp4' />
-          </video>
+        <div>
+          {width < 430 ? (
+            <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+              <source src="/fishing1.MOV" type='video/mp4' />
+            </video>
 
-        ) : null}
+          ) : null}
 
-        {width > 430 ? (
-          <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
-            <source src="/fishing2.mp4" type='video/mp4' />
-          </video>
-         ) : null}
-        
-          
+          {width > 430 ? (
+            <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+              <source src="/fishing2.mp4" type='video/mp4' />
+            </video>
+          ) : null}
+        </div>
       </section>
 
       <section className={styles.slideshow}>
