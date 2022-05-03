@@ -24,7 +24,7 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
           <CssBaseline />
-            <IconButton aria-label="darkmode" onClick={handleClick} style={{"position": "fixed", "right": "10px"}}>
+            <IconButton aria-label="darkmode" onClick={handleClick} style={{"position": "fixed", "right": "1px"}}>
               <Brightness4Icon/>
               </IconButton>
             <Page />
