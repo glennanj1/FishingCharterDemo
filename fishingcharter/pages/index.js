@@ -8,13 +8,20 @@ import Slideshow from '../components/slideshow.js'
 import ScrollableTabsButtonVisible from '../components/badges'
 import useWindowDimensions from '../components/windowDimensions'
 
-export default function Home(props) {
+export default function Home() {
 
   const { width } = useWindowDimensions();
+  const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     console.log('%c🎣 fishing-charter-demo%c.vercel.app\n%c~welcome to 30 line sport fishing thanks for inspecting the page! We use next JS and are looking for developers to contribute! ~', 'filter: invert(1); font-size: 28px; font-weight: bolder; font-family: "Rubik"; margin-top: 20px; margin-bottom: 8px;', 'color: #ff7755; font-size: 28px; font-weight: bolder; font-family: "Rubik"', 'color: #9bcdf1; font-size: 16px; font-family: "Rubik"; margin-bottom: 20px;');
-  }, [width])
+    console.log(width);
+    if (width < 768) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  }, [width]);
   
   return (
     <div className={styles.container}>
@@ -77,16 +84,20 @@ export default function Home(props) {
       
       <section className={`${styles.section} ${styles.backgroundVideo}`}>
         <div>
-          {width < 600 ? (
+          {mobile ? (
             <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
               <source src="/fishing1.MOV" type='video/mp4' />
-            </video>
-          ) :  null }
-          {width > 600 ? (
+            </video> 
+            ) : (
+              null
+          )}
+        </div>
+        <div>
+          {mobile != true ? (
             <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
               <source src="/fishing2.mp4" type='video/mp4' />
             </video> 
-          ) : null }
+          ): null}
         </div>
       </section>
 
