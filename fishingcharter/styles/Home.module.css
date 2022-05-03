@@ -1,15 +1,26 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
+
 
 .scrollBar {
   /* padding: 100px; */
 }
 
 .slideshow {
+  background: url('/bgVideo.png');
   position: relative;
-  margin: 10vw;
+  height: 100vh;
 }
+
+.slideshowWrapper {
+  margin: 10vw;
+} 
+
+.map {
+  
+}
+
 .slideshowContainer {
   display: flex;
   justify-content: center;
@@ -40,6 +51,10 @@
   border-radius: 10px;
 }
 
+.backgroundVideo {
+ 
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -48,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background: url('/bg2.png'); */
+  background: url('/bgSlidshow.png');
 }
 
 .footer {
