@@ -31,7 +31,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@glennan_dev" />
         <meta name="twitter:title" content="30 Line Sports Fishing LLC" />
         <meta name="twitter:description" content="Once in a lifetime fishing charter" />
-        <meta name="twitter:image" content="https://fishingCharterFinal.b-cdn.net/IMG_4428" />
+        <meta name="twitter:image" content="https://fishingCharterFinal.b-cdn.net/IMG_4428.JPEG" />
         <meta name="description" content="Once in a liftime catch"/>
         <meta property="og:description" content="Once in a lifetime catch" />
         <meta property="og:title" content="30 Line Fishing" />
