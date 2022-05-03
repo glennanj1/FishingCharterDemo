@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -12,10 +12,9 @@ export default function Home(props) {
 
   const { width } = useWindowDimensions();
 
-
   useEffect(() => {
-    console.log('welcome to 30 line sport fishing thanks for inspecting the page! We use next JS and are looking for developers to contribute!')
-  })
+    console.log('%c🎣 fishing-charter-demo%c.vercel.app\n%c~welcome to 30 line sport fishing thanks for inspecting the page! We use next JS and are looking for developers to contribute! ~', 'filter: invert(1); font-size: 28px; font-weight: bolder; font-family: "Rubik"; margin-top: 20px; margin-bottom: 8px;', 'color: #ff7755; font-size: 28px; font-weight: bolder; font-family: "Rubik"', 'color: #9bcdf1; font-size: 16px; font-family: "Rubik"; margin-bottom: 20px;');
+  }, [width])
   
   return (
     <div className={styles.container}>
@@ -78,18 +77,16 @@ export default function Home(props) {
       
       <section className={`${styles.section} ${styles.backgroundVideo}`}>
         <div>
-          {width < 430 ? (
-            <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+          {width < 600 ? (
+            <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
               <source src="/fishing1.MOV" type='video/mp4' />
             </video>
-
-          ) : null}
-
-          {width > 430 ? (
-            <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+          ) :  null }
+          {width > 600 ? (
+            <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
               <source src="/fishing2.mp4" type='video/mp4' />
-            </video>
-          ) : null}
+            </video> 
+          ) : null }
         </div>
       </section>
 
@@ -102,7 +99,7 @@ export default function Home(props) {
       <section className={`${styles.section} ${styles.map}`}>
         <h1 className={styles.title}>
         </h1>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6305799910137!2d-74.25961258460272!3d40.461312679359956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb0c224682fd%3A0x8e0f8c0933a94b47!2sRaritan%20Marina!5e0!3m2!1sen!2sus!4v1651594864857!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6305799910137!2d-74.25961258460272!3d40.461312679359956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb0c224682fd%3A0x8e0f8c0933a94b47!2sRaritan%20Marina!5e0!3m2!1sen!2sus!4v1651594864857!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </section>
       
       <section className={`${styles.section} ${styles.map}`}>
