@@ -65,6 +65,7 @@
   justify-content: center;
   align-items: center;
   background: url('/bgSlidshow.png');
+  background-size: cover;
 }
 
 .footer {
