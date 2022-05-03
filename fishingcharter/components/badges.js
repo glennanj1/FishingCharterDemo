@@ -29,6 +29,11 @@ export default function ScrollableTabsButtonVisible() {
     >
       <Tabs
         value={value}
+        TabIndicatorProps={{
+          style: {
+            backgroundColor: "blue"
+          }
+        }}
         onChange={handleChange}
         variant="scrollable"
         scrollButtons
@@ -37,6 +42,9 @@ export default function ScrollableTabsButtonVisible() {
           [`& .${tabsClasses.scrollButtons}`]: {
             '&.Mui-disabled': { opacity: 0.3 },
           },
+          "&& .Mui-selected": {
+            color: "white"
+          }
         }}
       >
         <Tab icon={<SummarizeIcon />} aria-label="License" label="Licensed" />
