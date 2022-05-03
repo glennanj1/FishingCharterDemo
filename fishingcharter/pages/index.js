@@ -74,17 +74,19 @@ export default function Home(props) {
         </p>
       </main>
       
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.backgroundVideo}`}>
         <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
           <source src="/fishing2.mp4" type='video/mp4' />
         </video>
       </section>
 
       <section className={styles.slideshow}>
-        <Slideshow />
+        <div className={styles.slideshowWrapper}>
+          <Slideshow />
+        </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.map}`}>
         <h1 className={styles.title}>
         </h1>
         <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
