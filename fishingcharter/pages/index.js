@@ -3,12 +3,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-// import frank1 from '../public/frank1.png'
-// import OutlinedCard from '../components/card'
+import OutlinedCard from '../components/card'
 import Slideshow from '../components/slideshow.js'
 import ScrollableTabsButtonVisible from '../components/badges'
+import useWindowDimensions from '../components/windowDimensions'
 
 export default function Home(props) {
+
+  const { width } = useWindowDimensions();
+
+
   useEffect(() => {
     console.log('welcome to 30 line sport fishing thanks for inspecting the page! We use next JS and are looking for developers to contribute!')
   })
@@ -54,7 +58,7 @@ export default function Home(props) {
             className={styles.card}
           >
             <h2>Contact Us &rarr;</h2>
-            <p>Give Us a Call at during buisness hours. We are open from x - x </p>
+            <p>Give Us a Call any time. Click for more information</p>
           </a>
           </Link>
           <Link href="/login">
@@ -64,7 +68,7 @@ export default function Home(props) {
           >
             <h2>Login &rarr;</h2>
             <p>
-              Login to see your account, update payment details and much more.
+              Login to see your account, update payment details.
             </p>
           </a>
           </Link>
@@ -75,9 +79,20 @@ export default function Home(props) {
       </main>
       
       <section className={`${styles.section} ${styles.backgroundVideo}`}>
-        <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
-          <source src="/fishing2.mp4" type='video/mp4' />
-        </video>
+        {width <= 430 ? (
+          <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+            <source src="/fishing1.MOV" type='video/mp4' />
+          </video>
+
+        ) : null}
+
+        {width > 430 ? (
+          <video autoPlay loop playsInline defaultMuted muted className={styles.video}>
+            <source src="/fishing2.mp4" type='video/mp4' />
+          </video>
+         ) : null}
+        
+          
       </section>
 
       <section className={styles.slideshow}>
@@ -89,7 +104,11 @@ export default function Home(props) {
       <section className={`${styles.section} ${styles.map}`}>
         <h1 className={styles.title}>
         </h1>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24386.336562058146!2d-74.04792776044921!3d40.180313100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c227e1a86b3223%3A0x9a043d400dd011bd!2sBelmar%20Manutti%20Marina!5e0!3m2!1sen!2sus!4v1649356283168!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6305799910137!2d-74.25961258460272!3d40.461312679359956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb0c224682fd%3A0x8e0f8c0933a94b47!2sRaritan%20Marina!5e0!3m2!1sen!2sus!4v1651594864857!5m2!1sen!2sus" allowFullScreen="true" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      
+      <section className={`${styles.section} ${styles.map}`}>
+        <OutlinedCard />
       </section>
 
       <footer className={styles.footer}>
