@@ -24,6 +24,7 @@ export default function ScrollableTabsButtonVisible() {
         flexGrow: 1,
         maxWidth: { xs: 320, sm: 480 },
         bgcolor: 'background.paper',
+        background: 'none',
       }}
     >
       <Tabs
