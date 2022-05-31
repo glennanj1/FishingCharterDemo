@@ -2,6 +2,10 @@
   /* padding: 0 2rem; */
 }
 
+🦴.imageWrapper {
+  border-radius: 30px;
+  overflow: hidden;
+}
 
 .scrollBar {
   /* padding: 100px; */
