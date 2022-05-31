@@ -7,6 +7,7 @@ import OutlinedCard from '../components/card'
 import Slideshow from '../components/slideshow.js'
 import ScrollableTabsButtonVisible from '../components/badges'
 import useWindowDimensions from '../components/windowDimensions'
+import Script from 'next/script'
 
 export default function Home() {
 
@@ -111,6 +112,15 @@ export default function Home() {
         <div className={styles.slideshowWrapper}>
           <Slideshow />
         </div>
+      </section>
+
+      <section className={styles.slideshow}>
+      <div id="fbkr-widget-672">
+        <a href="https://fishingbooker.com">
+          <img src="https://static.fishingbooker.com/public/img/widgets/fishingbooker-logo-dark.svg" alt="FishingBooker"/>
+        </a>
+      </div>
+      <Script async defer type="text/javascript" src="https://fishingbooker.com/widget/get?charterId=26457&widget=review-snippets&unique=672&shadow=true" />
       </section>
 
       <section className={`${styles.section} ${styles.map}`}>
