@@ -71,14 +71,14 @@ export default function Home() {
             <p>Give Us a Call any time. Click for more information</p>
           </a>
           </Link>
-          <Link href="/login">
+          <Link href="/pricing">
           <a
             href=""
             className={styles.card}
           >
-            <h2>Login &rarr;</h2>
+            <h2>Pricing &rarr;</h2>
             <p>
-              Login to see your account, update payment details.
+              Click here to view Captain Frank's unbeatable prices!
             </p>
           </a>
           </Link>
