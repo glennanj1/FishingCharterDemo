@@ -32,79 +32,98 @@ export default function Home() {
         <meta name="twitter:creator" content="@glennan_dev" />
         <meta name="twitter:site" content="@glennan_dev" />
         <meta name="twitter:title" content="30 Line Sports Fishing LLC" />
-        <meta name="twitter:description" content="Once in a lifetime fishing charter" />
-        <meta name="twitter:image" content="https://fishingCharterFinal.b-cdn.net/frankStriperCatch.png" />
-        <meta name="description" content="Once in a liftime catch"/>
+        <meta
+          name="twitter:description"
+          content="Once in a lifetime fishing charter"
+        />
+        <meta
+          name="twitter:image"
+          content="https://fishingCharterFinal.b-cdn.net/frankStriperCatch.png"
+        />
+        <meta name="description" content="Once in a liftime catch" />
         <meta property="og:description" content="Once in a lifetime catch" />
         <meta property="og:title" content="30 Line Fishing" />
         <meta property="og:type" content="website" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          30 Line Sport Fishing
-        </h1>
+        <h1 className={styles.title}>30 Line Sport Fishing</h1>
+        <h2>Call today to book a trip</h2>
+        <h3>Captain Frank · (609)-560-2123</h3>
+        <h3>Captain Mike · (609)-613-1027</h3>
+
         <div className={styles.scrollBar}>
           <ScrollableTabsButtonVisible />
         </div>
-    
+
         <div className={styles.grid}>
           <Link href="/about">
-          <a className={styles.card} id={styles.card}>
-            <h2>About &rarr;</h2>
-            <p>Find in-depth information about what we do</p>
-          </a>
+            <a className={styles.card} id={styles.card}>
+              <h2>About &rarr;</h2>
+              <p>Find in-depth information about what we do</p>
+            </a>
           </Link>
 
           <Link href="/charter">
-          <a href="" className={styles.card}>
-            <h2>Charter Times &rarr;</h2>
-            <p>Take a Look at our Calendar and schedule.</p>
-          </a>
+            <a href="" className={styles.card}>
+              <h2>Charter Times &rarr;</h2>
+              <p>Take a Look at our Calendar and schedule.</p>
+            </a>
           </Link>
 
           <Link href="/contact">
-          <a
-            href=""
-            className={styles.card}
-          >
-            <h2>Contact Us &rarr;</h2>
-            <p>Give Us a Call any time. Click for more information</p>
-          </a>
+            <a href="" className={styles.card}>
+              <h2>Contact Us &rarr;</h2>
+              <p>Give Us a Call any time. Click for more information</p>
+            </a>
           </Link>
           <Link href="/pricing">
-          <a
-            href=""
-            className={styles.card}
-          >
-            <h2>Pricing &rarr;</h2>
-            <p>
-              Click here to view Captain Frank's unbeatable prices!
-            </p>
-          </a>
+            <a href="" className={styles.card}>
+              <h2>Pricing &rarr;</h2>
+              <p>Click here to view Captain Frank's unbeatable prices!</p>
+            </a>
           </Link>
-          </div>
+        </div>
         <p className={styles.description}>
-          Once in a lifetime fishing experience with Captain Frank Cicalese and crew{' '}
+          Once in a lifetime fishing experience with Captain Frank Cicalese and
+          crew{" "}
         </p>
       </main>
-      
+
       <section className={`${styles.section} ${styles.backgroundVideo}`}>
         <div>
           {mobile ? (
-            <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
-              <source src="https://fishingCharterFinal.b-cdn.net/fishing1.MOV" type='video/mp4' />
-            </video> 
-            ) : (
-              null
-          )}
+            <video
+              autoPlay
+              loop
+              playsInline
+              defaultmuted="true"
+              muted
+              className={styles.video}
+            >
+              <source
+                src="https://fishingCharterFinal.b-cdn.net/fishing1.MOV"
+                type="video/mp4"
+              />
+            </video>
+          ) : null}
         </div>
         <div>
           {mobile != true ? (
-            <video autoPlay loop playsInline defaultmuted="true" muted className={styles.video}>
-              <source src="https://fishingCharterFinal.b-cdn.net/fishing.mp4" type='video/mp4' />
-            </video> 
-          ): null}
+            <video
+              autoPlay
+              loop
+              playsInline
+              defaultmuted="true"
+              muted
+              className={styles.video}
+            >
+              <source
+                src="https://fishingCharterFinal.b-cdn.net/fishing.mp4"
+                type="video/mp4"
+              />
+            </video>
+          ) : null}
         </div>
       </section>
 
@@ -115,38 +134,51 @@ export default function Home() {
       </section>
 
       <section className={styles.slideshow}>
-      <div id="fbkr-widget-672">
-        <a href="https://fishingbooker.com">
-          <img src="https://static.fishingbooker.com/public/img/widgets/fishingbooker-logo-dark.svg" alt="FishingBooker"/>
-        </a>
-      </div>
-      <Script async defer type="text/javascript" src="https://fishingbooker.com/widget/get?charterId=26457&widget=review-snippets&unique=672&shadow=true" />
+        <div id="fbkr-widget-672" className={styles.review}>
+          <a href="https://fishingbooker.com">
+            <img
+              src="https://static.fishingbooker.com/public/img/widgets/fishingbooker-logo-dark.svg"
+              alt="FishingBooker"
+            />
+          </a>
+        </div>
+
+        <Script
+  
+          async
+          defer
+          type="text/javascript"
+          src="https://fishingbooker.com/widget/get?charterId=26457&widget=review-snippets&unique=672&shadow=true"
+        />
       </section>
 
+
+
       <section className={`${styles.section} ${styles.map}`}>
-        <h1 className={styles.title}>
-        </h1>
-        <iframe className={styles.maps} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6305799910137!2d-74.25961258460272!3d40.461312679359956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb0c224682fd%3A0x8e0f8c0933a94b47!2sRaritan%20Marina!5e0!3m2!1sen!2sus!4v1651594864857!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <h1 className={styles.title}></h1>
+        <iframe
+          className={styles.maps}
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.6305799910137!2d-74.25961258460272!3d40.461312679359956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb0c224682fd%3A0x8e0f8c0933a94b47!2sRaritan%20Marina!5e0!3m2!1sen!2sus!4v1651594864857!5m2!1sen!2sus"
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
-      
+
       <section className={`${styles.section} ${styles.map}`}>
         <OutlinedCard />
       </section>
 
       <footer className={styles.footer}>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          30 Line Sport Fishing LLC{' '}
+        <a href="" target="_blank" rel="noopener noreferrer">
+          30 Line Sport Fishing LLC{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
 
 
