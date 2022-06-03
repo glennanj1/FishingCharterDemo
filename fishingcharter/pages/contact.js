@@ -5,13 +5,22 @@ function Contact() {
   return (
     <>
       <main className={styles.main}>
-        <h1>Contact</h1>
-        <h2>
-          Click to Call: <a className={styles.phone} href="tel:+1-609-560-2123">609-560-2123</a>
-        </h2>
+        <h1>Call today to book a trip</h1>
+        <h3>
+          Captain Frank ·{" "}
+          <a className={styles.phone} href="tel:+1-609-560-2123">
+            (609)-560-2123
+          </a>
+        </h3>
+        <h3>
+          Captain Mike ·{" "}
+          <a className={styles.phone} href="tel:+1-609-613-1027">
+            (609)-613-1027
+          </a>
+        </h3>
       </main>
     </>
-  )
+  );
 }
 
 export default Contact
