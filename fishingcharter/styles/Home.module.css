@@ -2,6 +2,7 @@
   /* padding: 0 2rem; */
 }
 
+
 .imageWrapper {
   border-radius: 30px;
   overflow: hidden;
@@ -112,6 +113,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-shadow: -3px 4px #000cff;
 }
 
 .title,
@@ -182,7 +184,7 @@
   bottom: -50%;
   background: white;
   border-radius: 40%;
-  animation: spin 4s ease-in-out forwards;
+  animation: spin 2.5s ease-in-out forwards;
   position: absolute;
 }
 
