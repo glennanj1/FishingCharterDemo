@@ -53,23 +53,16 @@ export default function Home() {
           Captain Frank ·{" "}
           <a className={styles.phone} href="tel:+1-609-560-2123">
             (609)-560-2123
-          </a>{" "}
-          {" · "}
+          </a>
+        </h3>
+        <h3>
           Captain Mike ·{" "}
           <a className={styles.phone} href="tel:+1-609-613-1027">
             (609)-613-1027
           </a>
         </h3>
-        {/* <h3>
-          Captain Mike ·{" "}
-          <a className={styles.phone} href="tel:+1-609-613-1027">
-            (609)-613-1027
-          </a>
-        </h3> */}
 
-        {/* <div className={styles.scrollBar}>
-          <ScrollableTabsButtonVisible />
-        </div> */}
+        <h5><a href="https://goo.gl/maps/JMDq4RKTiGhZrSNR">905 River Road Belmar, NJ 07719 United States</a></h5>
 
         <div className={styles.grid}>
           <Link href="/about">
@@ -148,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.slideshow}>
+      <section className={styles.section}>
         <div id="fbkr-widget-672" className={styles.review}>
           <a href="https://fishingbooker.com">
             <img
@@ -176,16 +169,16 @@ export default function Home() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-
+      {/* 
       <section className={`${styles.section} ${styles.map}`}>
         <OutlinedCard />
-      </section>
+      </section> */}
 
       <footer className={styles.footer}>
         <a href="" target="_blank" rel="noopener noreferrer">
-          30 Line Sport Fishing LLC{" "}
+          Code Cloud LLC{" "}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
           </span>
         </a>
       </footer>
