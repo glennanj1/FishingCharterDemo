@@ -135,11 +135,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.slideshow}>
+      {/* <section className={styles.slideshow}>
         <div className={styles.slideshowWrapper}>
           <Slideshow />
         </div>
-      </section>
+      </section> */}
 
       <section className={styles.section}>
         <div id="fbkr-widget-672" className={styles.review}>
