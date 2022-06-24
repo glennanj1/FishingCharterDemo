@@ -98,7 +98,7 @@ export default function Home() {
         </p>
       </main>
 
-      <section className={`${styles.section} ${styles.backgroundVideo}`}>
+      {/* <section className={`${styles.section} ${styles.backgroundVideo}`}>
         <div>
           {mobile ? (
             <video
@@ -133,7 +133,7 @@ export default function Home() {
             </video>
           ) : null}
         </div>
-      </section>
+      </section> */}
 
       {/* <section className={styles.slideshow}>
         <div className={styles.slideshowWrapper}>
@@ -176,7 +176,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a href="" target="_blank" rel="noopener noreferrer">
-          Code Cloud LLC{" "}
+          Code Cloud{" "}
           <span className={styles.logo}>
             {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
           </span>
