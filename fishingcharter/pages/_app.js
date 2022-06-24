@@ -14,7 +14,7 @@ const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-  const [theme, setTheme] = useState(darkTheme);
+  const [theme, setTheme] = useState(lightTheme);
 
   let handleClick = () => {
     theme === darkTheme ? setTheme(lightTheme) : setTheme(darkTheme);
